@@ -1,0 +1,152 @@
+	a{
+		color:white;
+	}
+	h1, h2, h3{
+		text-align: center;
+	}
+
+
+	body, html {
+		height: 100%;
+		margin:0;
+	}
+
+
+	.tablink {
+		background-color: #555;
+		color: white;
+		float: left;
+		border: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: : 10px;
+		width: 16.66%;
+		outline: none;
+	}
+
+	.tablink:hover {
+		background-color: #777;
+	}
+
+	.tabcontent {
+		color: white;
+		display: none;
+		padding: 70px 20px;
+		height: 100%;
+	}
+
+	#urlInput {
+		width:75%;
+		height:5%;
+		border-radius:25px;
+		font-size: 20px;
+		position:relative;
+		left:100px;
+	}
+
+	#btn1 {
+		border-radius:25px;
+		width:6%;
+		height:6%;
+		color:black;
+		font-size:15px;
+		position:relative;
+		left:100px;
+	}
+
+	table{
+		width:100%;
+		height: 40%;
+		border: 3px solid white;
+	}
+
+	td {
+		border: white 1px solid;
+	}
+
+	#divOut{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#divOut > div{
+		background-color: #f1f1f1;
+  		margin: 10px;
+  		padding-left: 10px;
+  		font-size: 20px;
+  		border-radius: 25px;
+  		color: navy;
+	}
+
+	#refresh{
+		text-align: center;
+		border-radius: 25px;
+		margin-bottom: 20px;
+	}
+
+	#container {
+		width:100%;
+		text-align: center;
+	}
+
+	#containerTop {
+		width:100%;
+		text-align: center;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+
+	.middle{
+		font-size: 18px;
+	}
+
+
+	.right{
+		float: right;
+		padding-right: 20px;
+		font-size: 10px;
+	}
+
+	.left {
+		float: left;
+		padding-left: 20px;
+		font-size:10px;
+	}
+
+	.innerBlock {
+		margin: 0;
+	}
+
+	#newsSource {
+		color:navy;
+	}
+
+	#newsSource:hover {
+		color: red;
+	}
+
+	#info {
+		text-align: right;
+		font-size:10px;
+		padding-right:30px;
+		margin:-5px;
+	}
+
+
+	#home {background: linear-gradient(blue,yellow);}
+	#book {background: linear-gradient(teal,aqua);}
+	#notes {background: linear-gradient(purple,pink);}
+	#assignment1 {background: linear-gradient(maroon,red);}
+	#assignment2 {background: linear-gradient(black,white);}
+	#assignment3 {background: linear-gradient(navy,lime);}
+
+
+
+
+
+
+
+
+
+
+

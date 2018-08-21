@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Iwan's Website!!!</title>
+	<link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body onload="openPage('home', this, 'blue')">
+<h1> Iwan Siauw</h1>
+
+<button class="tablink" onclick="openPage('home', this, 'blue')" id="Hmome">Home</button>
+<button class="tablink" onclick="openPage('book', this, 'teal')">Textbook</button>
+<button class="tablink" onclick="openPage('notes', this, 'purple')">Lecture Notes</button>
+<button class="tablink" onclick="openPage('assignment1', this, 'maroon')">Client-Server Prototype</button>
+<button class="tablink" onclick="openPage('assignment2', this, 'black')">URL parser</button>
+<button class="tablink" onclick="openPage('assignment3', this, 'navy')">Scavenger Hunt</button>
+
+<div id="home" class="tabcontent">
+  <h2>Welcome To My HomePage</h2>
+</div>
+
+<div id="book" class="tabcontent">
+  <h2>Textbook Link</h2>
+  <a href="https://www.zybooks.com" target="_blank">Click here to visit Zybook</a>
+</div>
+
+ <div id="notes" class="tabcontent">
+  <h2>Lecture Notes Link</h2>
+  <a href="http://venus.cs.qc.cuny.edu/~siiw1541/2018-07-31_Notes_by_Iwan_Siauw.pdf" target="_blank">Click here for lecture notes link</a>
+</div>
+
+<div id="assignment1" class="tabcontent">
+  <h2>Client-Server Protoype</h2> <br><br>
+
+    <form method="post" action="" id="form1">
+  	<input type="radio" id="radio1" name="connecting" checked>Connect to Instructor<br>
+  	<input type="radio" id="radio2" name="connecting">Connect to my Server<br> <br>
+  	<label>Please Enter Your Name:
+	<input type="text" name="name">
+	</label>
+    <input type='submit' value='Connect' onclick="connect();">
+	</form>
+</div>
+
+<div id="assignment2" class="tabcontent">
+  <h2>URL Parser</h2> <br> <br>
+  <input placeholder="Please enter or copy the URL here" type="url" name="url" id="urlInput" required>
+  <button type="button" id="btn1" onclick="urlParsing()">Enter</button> <br> <br> <br>
+
+</div>
+
+<div id="assignment3" class="tabcontent">
+ 
+  <div id="divOut">
+
+   <div class="divIn">
+     <h2 class="innerBlock">Breaking News</h2>
+
+    <div id="containerTop">
+      <span><a href="" id="newsSource" class="middle" target="_blank"></a></span><br>
+      <span id="newsTitle" class="middle"></span><br>
+      <span id="newsDesc"></span>
+    </div>
+
+    <div id="container">
+      <div class="left" id="newsUrl"></div>
+      <div class="right"></div>
+    </div>
+  </div> 
+
+   <div class="divIn">
+     <h2 class="innerBlock">Stock Market</h2>
+
+    <div id="containerTop">
+      <span id="companyName" class="middle"></span><br>
+      <span id="stockDetails"></span><br>
+    </div>
+
+    <div id="container">
+      <div class="left" id="stockUrl"></div>
+      <div class="right" id="stockTime"></div>
+    </div>
+  </div> 
+
+  <div class="divIn">
+    <h2 class="innerBlock">Weather Forecast</h2>
+
+    <div id="containerTop">
+      <span id="weatherCity" class="middle"></span><br>
+      <span id="currentTemp" class="middle"></span><br>
+      <span id="weatherDetails"></span>
+    </div>
+
+    <div id="container">
+      <div class="left" id="weatherUrl"></div>
+      <div class="right"></div>
+    </div>
+  </div>
+
+  <div class="divIn">
+     <h2 class="innerBlock">World Population</h2>
+
+    <div id="containerTop">
+      <span id="population" class="middle"></span><br>
+      <span id="popDetails"></span><br>
+    </div>
+
+    <div id="container">
+      <div class="left" id="populationUrl"></div>
+      <div class="right"></div>
+    </div>  
+  </div>
+
+  <div class="divIn">
+     <h2 class="innerBlock">US National Debt</h2>
+
+    <div id="containerTop">
+      <span id="usDebt" class="middle"></span><br>
+      <span id="debtDetails"></span><br>
+    </div>
+
+    <div id="container">
+      <div class="left" id="debtUrl"></div>
+      <div class="right"></div>
+    </div>
+  </div>
+
+  <p id="info">Page automatically refreshed every 30 seconds.</p>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
