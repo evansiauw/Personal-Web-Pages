@@ -1,4 +1,4 @@
-# Personal Web Pages
+# Web Pages
 
 This Web Pages is written in HTML, CSS, JS, JQUERY, and PHP.    
 It has several tabs:
